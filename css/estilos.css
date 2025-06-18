@@ -221,3 +221,37 @@ p {
     max-width: 90%;
   }
 }
+
+/* Footer al final de la página */
+footer {
+  background-color: #c2185b;
+  padding: 15px 10px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  border-top: 1px solid #ddd;
+
+}
+
+/* Cita textual tipo académica */
+.cita {
+  font-style: italic;
+  background-color: #fff0f5;
+  padding: 12px;
+  border-left: 4px solid #e91e63;
+  margin: 15px 0;
+  border-radius: 4px;
+  color: #555;
+}
+.em2 {
+  display: block;
+  text-align: right;
+}
+
+.cita:hover{
+    box-shadow:
+    0 0 15px rgba(255, 105, 180, 0.4),
+    0 0 25px #ff69b4,
+    0 0 45px rgba(255, 105, 180, 0.8);
+}
