@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Accesibilidad Web | Investigación 3</title>
+  <meta name="description" content="Investigación sobre accesibilidad web: qué es, importancia y principios fundamentales según las WCAG con ejemplos." />
+  <meta name="keywords" content="accesibilidad web, WCAG, accesibilidad digital, diseño inclusivo" />
+  <meta name="robots" content="index, follow" />
+</head>
+<body>
+
+  <header>
+    <h1 style="margin:0; font-size:1.5rem;">ACCESIBILIDAD WEB</h1>
+    <p style="margin:0; font-size:0.9rem;">Trabajo de Investigación 3</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a> 
+    <a href="seo.html">SEO</a>
+    <a href="usabilidad.html">USABILIDAD WEB</a>
+    <a href="accesibilidad.html">ACCESIBILIDAD WEB</a>
+  </nav>
+
+  <nav>
+    <ul>
+      <li><a href="#queEs">¿Qué es?</a></li>
+      <li><a href="#importancia">Importancia</a></li>
+      <li><a href="#principios">Principios Fundamentales WCAG</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="queEs">
+      <h2>¿Qué es la Accesibilidad Web?</h2>
+      <p>La accesibilidad web es la práctica de diseñar y desarrollar sitios y aplicaciones web para que todas las personas, incluidas aquellas con discapacidades (visuales, auditivas, motrices, cognitivas, etc.), puedan acceder, entender, navegar y usar el contenido sin barreras.</p>
+      <p>Un sitio accesible permite que todos los usuarios tengan una experiencia completa y satisfactoria, independientemente de sus capacidades o tecnología utilizada.</p>
+    </section>
+
+    <section id="importancia">
+      <h2>Importancia</h2>
+      <ul>
+        <li>Garantiza igualdad de acceso a la información y servicios para todas las personas.</li>
+        <li>Cumple con normativas legales y estándares internacionales.</li>
+        <li>Mejora la usabilidad general del sitio para todos los usuarios.</li>
+        <li>Aumenta el alcance y la audiencia del sitio web.</li>
+        <li>Refuerza la imagen positiva de la organización o marca.</li>
+      </ul>
+    </section>
+
+    <section id="principios">
+      <h2>Principios fundamentales de la accesibilidad web según las WCAG</h2>
+
+      <h3>1. Perceptible</h3>
+      <p>La información y los componentes de la interfaz deben presentarse a los usuarios de manera que puedan percibirlos con sus sentidos.</p>
+      <div class="ejemplo">Ejemplo: Texto alternativo (alt) en imágenes para que lectores de pantalla describan la imagen a personas con discapacidad visual.</div>
+      <pre class="ejemplo-codigo"><code>&lt;img src="logo.png" alt="Logo de la empresa accesible" /&gt;</code></pre>
+
+      <h3>2. Operable</h3>
+      <p>Los usuarios deben poder interactuar con todos los controles y navegación mediante diferentes dispositivos y sin limitaciones.</p>
+      <div class="ejemplo">Ejemplo: Un menú navegable con teclado para personas que no pueden usar mouse.</div>
+      <pre class="ejemplo-codigo"><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+      <h3>3. Comprensible</h3>
+      <p>La información y la operación de la interfaz deben ser claras y fáciles de entender.</p>
+      <div class="ejemplo">Ejemplo: Instrucciones claras para completar un formulario, con mensajes de error explicativos.</div>
+      <pre class="ejemplo-codigo"><code>&lt;form&gt;
+  &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required /&gt;
+  &lt;span class="error"&gt;Por favor, ingrese un correo válido.&lt;/span&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+      <h3>4. Robusto</h3>
+      <p>El contenido debe ser lo suficientemente sólido para que pueda ser interpretado de manera fiable por una amplia variedad de agentes de usuario, incluidos tecnologías de asistencia.</p>
+      <div class="ejemplo">Ejemplo: Código HTML estructurado correctamente para que sea compatible con lectores de pantalla y navegadores modernos.</div>
+      <pre class="ejemplo-codigo"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Página accesible&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Bienvenido a la página accesible&lt;/h1&gt;
+  &lt;p&gt;Este contenido es compatible con múltiples tecnologías.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+<section id="referencias-accesibilidad">
+  <h2>Referencias</h2>
+  <ul>
+    <li>W3C - <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
+    <li>Fundación ONCE - <a href="https://www.fundaciononce.es/que-hacemos/accesibilidad-web" target="_blank" rel="noopener">Accesibilidad Web</a></li>
+    <li>W3C Web Accessibility Initiative - <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">WAI</a></li>
+  </ul>
+</section>
+
+
+  </main>
+
+</body>
+</html>

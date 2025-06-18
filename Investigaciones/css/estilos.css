@@ -1,0 +1,223 @@
+/* Estilo general del body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 900px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  padding: 0 15px;
+}
+
+/* Encabezado principal */
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #c2185b; /* Rosado fuerte */
+  animation: fadeInDown 0.6s ease-out;
+}
+
+header p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #888;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+/* Menú principal */
+nav:first-of-type {
+  background-color: #c2185b;
+  padding: 12px;
+  margin: 15px 0 20px 0;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+nav:first-of-type a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav:first-of-type a:hover {
+  text-decoration: underline;
+  color: #ffd1dc;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Menú secundario (submenú) */
+nav:nth-of-type(2) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+nav:nth-of-type(2) ul li a {
+  text-decoration: none;
+  color: #c2185b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav:nth-of-type(2) ul li a:hover {
+  color: #e91e63;
+}
+
+/* Contenido principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+section {
+  margin-bottom: 30px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+h2 {
+  color: #c2185b;
+  border-bottom: 2px solid #c2185b;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+h2:hover {
+  color: #e91e63;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* CONTENEDOR FLEXIBLE PARA LAS IMÁGENES */
+.galeria-ejemplos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+/* Estilo de imágenes dentro de .galeria-ejemplos */
+.ejemplo-media {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.ejemplo-media:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 10px rgba(255, 105, 180, 0.3),
+    0 0 20px rgba(255, 105, 180, 0.2);
+}
+
+/* Cajas de ejemplo (notas o tips) */
+.ejemplo {
+  background-color: #fff0f5;
+  border-left: 4px solid #e91e63;
+  padding: 10px 15px;
+  margin: 10px 0 20px 0;
+  font-style: italic;
+  animation: fadeIn 0.7s ease-in-out;
+  border-radius: 5px;
+}
+
+/* Estilo para bloques de código */
+.ejemplo-codigo {
+  position: relative;
+  background-color: #fdf1f5;
+  border: 1px solid #e6c0cc;
+  border-radius: 4px;
+  padding: 10px;
+  overflow-x: auto;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: pre-wrap;
+  animation: fadeInUp 1s ease-in-out;
+  transition: box-shadow 0.4s ease;
+  z-index: 1;
+}
+
+/* Efecto visual al pasar el mouse sobre código */
+.ejemplo-codigo:hover {
+  box-shadow:
+    0 0 15px rgba(255, 105, 180, 0.4),
+    0 0 25px #ff69b4,
+    0 0 45px rgba(255, 105, 180, 0.8);
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  nav:first-of-type a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  nav:nth-of-type(2) ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .galeria-ejemplos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ejemplo-media {
+    max-width: 90%;
+  }
+}
